@@ -22,7 +22,7 @@ app.use(session({
 }))
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('public'));
+    app.use(express.static('dist'));
 
 } else {
     const corsOptions = {
