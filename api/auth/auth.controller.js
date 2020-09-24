@@ -23,12 +23,7 @@ async function signup(req, res) {
     logger.debug(Object.values(req.body).join(' , '));
     const account = await authService.signup(JSON.parse(JSON.stringify(credantials)));
     logger.debug(`auth.route - new account created: ${JSON.stringify(account)}`);
-    // logger.debug(
-    //   acount ? `auth.route - new account created: ` + JSON.stringify(acount) : `auth.route - This email account: ${eamil}, already exists, will be sent for a password check`
-    // );
-    // const isAlreadyExistsAtRegistration = acount? false: true
     const user = await authService.login(credantials.email, credantials.password);
-    // const user = await authService.login(email, password, isAlreadyExistsAtRegistration);
     req.session.user = user;
     res.json(user);
   } catch (err) {
@@ -39,7 +34,6 @@ async function signup(req, res) {
 
 
 async function logout(req, res) {
-  console.log('/////////////////////////////////////////////////im ');
   try {
     req.session.destroy();
     res.send({ message: "logged out successfully" });

@@ -6,7 +6,6 @@ const saltRounds = 10;
 
 // async function login(email, password, isWithGoogle) {
 // if (!email || (!password && !isWithGoogle))
-// async function login(email, password, isAlreadyExistsAtRegistration = false) {
 async function login(email, password) {
   logger.debug(`auth.service - login with email: ${email}`);
   if (!email || !password)
@@ -28,8 +27,6 @@ async function signup(credantials) {
   logger.debug(`auth.service - signup with email: ${credantials.email}`);
   const hash = await bcrypt.hash(credantials.password, saltRounds);
   credantials.password = hash
-  // const user = await userService.getByEmail(email);
-  // return user ? null : userService.add({
   return userService.add(credantials);
 }
 
