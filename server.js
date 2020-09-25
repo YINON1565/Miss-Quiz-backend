@@ -22,8 +22,8 @@ app.use(session({
 }))
 console.log(process.env.NODE_ENV, 'process.env.NODE_ENV');
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.resolve(__dirname, 'miss-quiz')));
-    // app.use(express.static('miss-quiz'));
+    // app.use(express.static(path.resolve(__dirname, 'miss-quiz')));
+    app.use(express.static('miss-quiz'));
 
 } else {
     const corsOptions = {
