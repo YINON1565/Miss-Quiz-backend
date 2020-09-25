@@ -20,7 +20,7 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false }
 }))
-
+console.log(process.env, 'process.env.NODE_ENV');
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('miss-quiz'));
 
@@ -39,8 +39,6 @@ app.use('/api/user', userRoutes)
 
 
 const logger = require('./services/logger.service')
-const { Console } = require('console')
-// const port = process.env.PORT || 5000;
 const port = process.env.PORT || 3030;
 http.listen(port, () => {
     logger.info('Server is running on port: ' + port)
