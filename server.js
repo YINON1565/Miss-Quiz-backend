@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const path = require('path')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
 
@@ -22,8 +23,8 @@ app.use(session({
 }))
 console.log(process.env.NODE_ENV, 'process.env.NODE_ENV');
 if (process.env.NODE_ENV === 'production') {
-    // app.use(express.static(path.resolve(__dirname, 'miss-quiz')));
-    app.use(express.static('miss-quiz'));
+    app.use(express.static(path.resolve(__dirname, 'miss-quiz')));
+    // app.use(express.static('miss-quiz'));
 
 } else {
     const corsOptions = {
