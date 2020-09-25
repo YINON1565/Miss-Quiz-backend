@@ -1,0 +1,76 @@
+{
+  "configVersion": 1,
+  "timestamp": 1601020004888,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.5cc3cddafe3f7dd7de87.js",
+        "/main-es5.5cc3cddafe3f7dd7de87.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.f332a089ad1600448873.js",
+        "/polyfills-es5.177e85a9724683782539.js",
+        "/runtime-es2015.0dae8cbc97194c7caed4.js",
+        "/runtime-es5.0dae8cbc97194c7caed4.js",
+        "/styles.739b57c862ad504f1d1c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/android-chrome-192x192.png",
+        "/assets/icons/android-chrome-512x512.png",
+        "/assets/icons/apple-touch-icon.png",
+        "/assets/icons/favicon-16x16.png",
+        "/assets/icons/favicon-32x32.png",
+        "/assets/svg/puzzle-piece.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/android-chrome-192x192.png": "38d6b5745f6ef110ef06d3a797509e7642383042",
+    "/assets/icons/android-chrome-512x512.png": "260022202098aebaffaf5712389e2392e21ca2be",
+    "/assets/icons/apple-touch-icon.png": "01919ab8b801fc0db83da87cecfe9da4223d8c56",
+    "/assets/icons/favicon-16x16.png": "1f66dba76e5fa8a188e7e3b07f49894356596717",
+    "/assets/icons/favicon-32x32.png": "7e1e79c0610bbeb33d4ac78e3375f28c42620a0d",
+    "/assets/svg/puzzle-piece.svg": "c9591a9bbecf921bacb8001d78073d4b32c7b299",
+    "/favicon.ico": "e295be0089f3410866e9a105c7aa7b63d499c90f",
+    "/index.html": "58978e1fabc1b2498c9f39b98b85173f9db4df5d",
+    "/main-es2015.5cc3cddafe3f7dd7de87.js": "7d581b4766740b433f343c9a0854c1d58e3bea97",
+    "/main-es5.5cc3cddafe3f7dd7de87.js": "e104e82b46302be900b5734ddceaff601402dcca",
+    "/manifest.webmanifest": "9db72f13b4bcfd22f82f7fb3a5e83c502423ec2e",
+    "/polyfills-es2015.f332a089ad1600448873.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/polyfills-es5.177e85a9724683782539.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
+    "/runtime-es2015.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.739b57c862ad504f1d1c.css": "3c9966b2fc10da27b1b47e4d10fd9e5822a48cb6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

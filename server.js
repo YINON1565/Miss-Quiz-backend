@@ -20,9 +20,10 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false }
 }))
-console.log(process.env, 'process.env.NODE_ENV');
+console.log(process.env.NODE_ENV, 'process.env.NODE_ENV');
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('miss-quiz'));
+    app.use(express.static(path.resolve(__dirname, 'miss-quiz')));
+    // app.use(express.static('miss-quiz'));
 
 } else {
     const corsOptions = {
